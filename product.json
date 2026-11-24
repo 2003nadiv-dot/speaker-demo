@@ -1,0 +1,216 @@
+{
+  "title": "Aurora Mini Speaker",
+  "subtitle": "Interactive exploded view \u00b7 sample product",
+  "package": "pro",
+  "model": "models/sample-speaker.glb",
+  "units": "m",
+  "accent": "#ffb020",
+  "scene": "showroom",
+  "autoSpin": false,
+  "explodeScale": 1,
+  "camera": {
+    "theta": 0.7,
+    "phi": 1.15
+  },
+  "parts": [
+    {
+      "node": "Front_Grille",
+      "name": "Front grille",
+      "category": "Housing",
+      "shell": true,
+      "explode": [
+        0,
+        0.02,
+        0.16
+      ],
+      "description": "Fabric-covered front panel that protects the drivers while letting sound pass through."
+    },
+    {
+      "node": "Rear_Housing",
+      "name": "Rear housing",
+      "category": "Housing",
+      "shell": true,
+      "explode": [
+        0,
+        0,
+        -0.16
+      ],
+      "description": "Rigid outer shell. Holds every component in place and carries the charging port."
+    },
+    {
+      "node": "Woofer",
+      "name": "Woofer",
+      "category": "Audio",
+      "explode": [
+        0,
+        0.02,
+        0.08
+      ],
+      "description": "Main speaker driver. Its larger cone moves more air for deeper bass."
+    },
+    {
+      "node": "Tweeter_Left",
+      "name": "Left tweeter",
+      "category": "Audio",
+      "explode": [
+        -0.09,
+        0.03,
+        0.06
+      ],
+      "description": "Small driver for high frequencies, placed left for stereo sound."
+    },
+    {
+      "node": "Tweeter_Right",
+      "name": "Right tweeter",
+      "category": "Audio",
+      "explode": [
+        0.09,
+        0.03,
+        0.06
+      ],
+      "description": "Small driver for high frequencies, placed right for stereo sound."
+    },
+    {
+      "node": "Amp_Board",
+      "name": "Amplifier board",
+      "category": "Electronics",
+      "explode": [
+        0,
+        -0.07,
+        -0.04
+      ],
+      "description": "Circuit board with the amplifier, Bluetooth chip and charging controller."
+    },
+    {
+      "node": "Battery",
+      "name": "Battery pack",
+      "category": "Electronics",
+      "explode": [
+        0,
+        0.05,
+        -0.1
+      ],
+      "description": "Two rechargeable lithium-ion cells for portable playback."
+    },
+    {
+      "node": "Volume_Knob",
+      "name": "Volume knob",
+      "category": "Controls",
+      "explode": [
+        0,
+        0.09,
+        0
+      ],
+      "description": "Aluminium-capped dial for volume and power."
+    },
+    {
+      "node": "Rubber_Feet",
+      "name": "Rubber feet",
+      "category": "Housing",
+      "explode": [
+        0,
+        -0.05,
+        0
+      ],
+      "description": "Non-slip feet that stop vibration and keep the speaker in place."
+    }
+  ],
+  "spin": [
+    {
+      "node": "Volume_Knob",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "speed": 0.5
+    }
+  ],
+  "paint": [
+    {
+      "label": "Body",
+      "materials": [
+        "Body"
+      ]
+    },
+    {
+      "label": "Grille",
+      "materials": [
+        "Grille"
+      ]
+    },
+    {
+      "label": "Knob",
+      "materials": [
+        "Accent"
+      ]
+    }
+  ],
+  "specs": [
+    [
+      "Size",
+      "22 \u00d7 12 \u00d7 10 cm"
+    ],
+    [
+      "Weight",
+      "0.9 kg"
+    ],
+    [
+      "Battery",
+      "Up to 14 hours"
+    ],
+    [
+      "Drivers",
+      "1 woofer + 2 tweeters"
+    ],
+    [
+      "Connection",
+      "Bluetooth, USB-C"
+    ]
+  ],
+  "compare": {
+    "person": false,
+    "items": [
+      {
+        "label": "Smartphone",
+        "size": [
+          0.0715,
+          0.147,
+          0.008
+        ]
+      }
+    ]
+  },
+  "sources": [],
+  "note": "Sample product made for this template. Not a real brand.",
+  "editions": [
+    {
+      "label": "Street Edition",
+      "materials": {
+        "Body": {
+          "map": "models/street-edition.jpg",
+          "roughness": 0.6,
+          "metalness": 0.05,
+          "project": "box",
+          "tile": 0.26
+        },
+        "BackPanel": {
+          "color": "#16161b"
+        },
+        "Trim": {
+          "color": "#ff2bd6",
+          "roughness": 0.3,
+          "metalness": 0.6
+        },
+        "Accent": {
+          "color": "#7cff3a",
+          "roughness": 0.35
+        },
+        "Grille": {
+          "color": "#9aa3ff"
+        }
+      }
+    }
+  ],
+  "baseEditionName": "Classic"
+}
